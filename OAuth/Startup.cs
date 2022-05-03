@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using OAuth.DB;
+using OAuth.Services;
 
 namespace OAuth
 {
@@ -32,30 +33,12 @@ namespace OAuth
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<AppDbContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("DefConnection"));
-            });
+            // CONFIGURE SQL-SERVER
+            services.ConfigureDbContext(Configuration);
 
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(options =>
-            {
-                options.TokenValidationParameters = new TokenValidationParameters()
-                {
-                    ValidateAudience = true,
-                    ValidAudience = "Users",
-                    ValidateIssuer = true,
-                    ValidIssuer = "https://localhost:44306",
-                    RequireExpirationTime = true,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF32.GetBytes(Configuration["JwtConfig:security"]))
-                };
-            });
-            ;
+            // CONFIGURE JWT SERVICES
+            services.ConfigureJWTM(Configuration);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
