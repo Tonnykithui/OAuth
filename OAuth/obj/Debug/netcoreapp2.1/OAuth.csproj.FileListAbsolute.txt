@@ -1,0 +1,11 @@
+C:\Users\Tonny\source\repos\OAuth\OAuth\bin\Debug\netcoreapp2.1\OAuth.deps.json
+C:\Users\Tonny\source\repos\OAuth\OAuth\bin\Debug\netcoreapp2.1\OAuth.runtimeconfig.json
+C:\Users\Tonny\source\repos\OAuth\OAuth\bin\Debug\netcoreapp2.1\OAuth.runtimeconfig.dev.json
+C:\Users\Tonny\source\repos\OAuth\OAuth\bin\Debug\netcoreapp2.1\OAuth.dll
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.csprojAssemblyReference.cache
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.csproj.CoreCompileInputs.cache
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.RazorAssemblyInfo.cache
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.RazorAssemblyInfo.cs
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.AssemblyInfoInputs.cache
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.AssemblyInfo.cs
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.RazorTargetAssemblyInfo.cache
