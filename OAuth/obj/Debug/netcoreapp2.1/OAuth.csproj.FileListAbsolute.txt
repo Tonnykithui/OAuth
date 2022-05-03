@@ -9,3 +9,6 @@ C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.RazorAssem
 C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.AssemblyInfoInputs.cache
 C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.AssemblyInfo.cs
 C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.RazorTargetAssemblyInfo.cache
+C:\Users\Tonny\source\repos\OAuth\OAuth\bin\Debug\netcoreapp2.1\OAuth.pdb
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.dll
+C:\Users\Tonny\source\repos\OAuth\OAuth\obj\Debug\netcoreapp2.1\OAuth.pdb
