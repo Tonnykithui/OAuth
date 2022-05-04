@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using OAuth.Models;
 using System;
 using System.Collections.Generic;
@@ -7,13 +9,18 @@ using System.Threading.Tasks;
 
 namespace OAuth.DB
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
         }
 
-        public DbSet<RegisterUser> users { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.Entity<IdentityUser>().Ignore("Password").Ignore("ConfirmPassword");
+        }
     }
 }

@@ -23,13 +23,13 @@ namespace OAuth.Services
             {
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
-                    ValidateAudience = true,
+                    ValidateAudience = false,
                     ValidAudience = "Users",
-                    ValidateIssuer = true,
+                    ValidateIssuer = false,
                     ValidIssuer = "https://localhost:44306",
-                    RequireExpirationTime = true,
+                    RequireExpirationTime = false,
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF32.GetBytes(configuration.GetConnectionString("secret")))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF32.GetBytes(configuration["JwtConfig:secret"]))
                 };
             });
         }
